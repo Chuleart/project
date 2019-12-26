@@ -11,8 +11,6 @@ else :
 c2 = input("do you want out parking :")
 #ออกและระบุเวลา
 total = (int(c2) - int(a))
-print(total,'min')
-#จอดกี่นาที่
 costPerHour = 20
 if total:
   
