@@ -47,7 +47,7 @@ def on_click():
       elif score>=1 and score<=49:
          os.system("cls")
          print('คะแนน',score,'ได้เกรด 0')
-         total=Label(root, text="ได้เกรด 0")
+         total=Label(root, text="ได้เกรด 0.0")
          total.grid(row=2, column=2, sticky=W)
          
       else:
