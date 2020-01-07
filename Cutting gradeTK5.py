@@ -11,7 +11,7 @@ def on_click():
       # try สร้างการเปรียบเทียบอะไรทีไม่ใช้ จากฟังชันหรือไม่ได้สร้างไว้จะไม่ error ใน Terminal แต่จะลงไปใน except เพือสร้าง popup
       score = tv_grade.get() 
       #ให้ tv = score และเปรียบเทียบค่า
-      if score > 101:
+      if score >= 101:
          messagebox.showinfo("Error ʕ•ᴥ•ʔ", "Enter the number before 100 or more")
       elif score>=80 and score<=100:
          os.system("cls")
