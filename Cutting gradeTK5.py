@@ -72,7 +72,7 @@ def reset():
    total = Label(root, text='ได้เกรด 0')
    total.grid(row=2, column=2, sticky=W)
    grade.delete(0, END)
-   tv_grade.set(0) 
+   tv_grade.set(0.0) 
    #สร้างค่าเดิมให้กลายเป็น 0
    os.system("cls")
 
