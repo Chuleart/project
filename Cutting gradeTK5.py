@@ -69,10 +69,10 @@ def on_click():
       #ในกรณีที่มีข้อผิดพลาดจะเข้ามาใน except เพือให้ messagebox สร้าง popup มาแจ้งเตือน
 def reset():
    #ฟังชัน การ Reset 
-   total = Label(root, text='ได้เกรด 0')
+   total = Label(root, text='ได้เกรด 0.0')
    total.grid(row=2, column=2, sticky=W)
    grade.delete(0, END)
-   tv_grade.set(0.0) 
+   tv_grade.set(0) 
    #สร้างค่าเดิมให้กลายเป็น 0
    os.system("cls")
 
@@ -95,7 +95,7 @@ Label(root, text='คำตอบ').grid(row=2, column=0, sticky=W)
 l1=Button(root, text=" Print Total ", command=on_click)
 l1.grid(row=3, column=1, sticky=W)
 
-Label(root, text='ได้เกรด 0').grid(row=2, column=2, sticky=W)
+Label(root, text='ได้เกรด 0.0').grid(row=2, column=2, sticky=W)
 
 l2=Button(root, text=" Reset ", command=reset)
 l2.grid(row=3, column=2, sticky=W)
